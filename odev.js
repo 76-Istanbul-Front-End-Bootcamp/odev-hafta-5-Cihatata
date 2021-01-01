@@ -59,7 +59,7 @@ document.querySelector('#isPopulationLess')
 //Does every city has land area bigger than 100? 
 document.querySelector('#isLandBigger')
   .addEventListener('click', () => {
-    const isAll = data.every(item => item.landArea < 100);
+    const isAll = data.every(item => item.landArea > 100);
     isAll ? alert('Yes') : alert('No')
   })
 
